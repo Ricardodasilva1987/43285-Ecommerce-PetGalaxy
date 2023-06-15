@@ -1,0 +1,19 @@
+.circulo {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(196, 201, 227);
+  border-radius: 50%;
+  position: relative;
+}
+.general {
+  display: flex;
+}
+
+.notificacion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(194, 36, 36);
+  font-size: 18px;
+}
