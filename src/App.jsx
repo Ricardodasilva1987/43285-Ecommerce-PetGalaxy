@@ -5,12 +5,15 @@ import ItemListContainer from "./components/pages/itemListContainer/ItemListCont
 
 function App() {
   const [saludo, setSaludo] = useState("Greetings");
+  const cambiarSaludo = (nuevoNombre) => {
+    setSaludo(nuevoNombre);
+  };
 
   return (
     <div>
       <Navbar />
 
-      <ItemListContainer saludo={saludo} />
+      <ItemListContainer saludo={saludo} cambiarSaludo={cambiarSaludo} />
     </div>
   );
 }
