@@ -4,16 +4,16 @@ import Navbar from "./components/layout/navbar/Navbar";
 import ItemListContainer from "./components/pages/itemListContainer/ItemListContainer.jsx";
 
 function App() {
-  const [saludo, setSaludo] = useState("Greetings");
+  const [greeting, setGreeting] = useState("Hola Como estas?");
   const cambiarSaludo = (nuevoNombre) => {
-    setSaludo(nuevoNombre);
+    setGreeting(nuevoNombre);
   };
 
   return (
     <div>
       <Navbar />
 
-      <ItemListContainer saludo={saludo} cambiarSaludo={cambiarSaludo} />
+      <ItemListContainer greeting={greeting} cambiarSaludo={cambiarSaludo} />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import "./ItemListContainer.css";
 
-const ItemListContainer = ({ saludo, cambiarSaludo }) => {
+const ItemListContainer = ({ greeting, cambiarSaludo }) => {
   //props enviadas desde App, probando enviar con estados (variables y funciones set)
   return (
     <div
@@ -9,7 +9,7 @@ const ItemListContainer = ({ saludo, cambiarSaludo }) => {
         cambiarSaludo("Haz hecho MouseOver!!!");
       }}
     >
-      <h1> {saludo}</h1>
+      <h1> {greeting}</h1>
     </div>
   );
 };
