@@ -22,6 +22,7 @@
   background-color: #d93b65;
   justify-content: space-around;
   align-items: center;
+  text-decoration: none;
 }
 
 .categorias {
@@ -29,9 +30,30 @@
   justify-content: space-around;
   align-items: center;
 }
-img {
+.logo {
   object-fit: cover;
   width: 80px;
   height: 80px;
   margin-right: 10px;
+}
+/*Estilo para pantalla pequeña*/
+
+@media screen and (max-width: 768px) {
+  .categorias {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .navbar-main li {
+    padding: 5px 10px;
+
+    background-color: aquamarine;
+    transition: background-color 0.2s ease-in-out;
+    font-size: 10px;
+  }
+  .navbar-main {
+    display: flex;
+    justify-content: center;
+  }
 }
