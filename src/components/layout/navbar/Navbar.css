@@ -14,15 +14,19 @@
 .navbar-main li {
   padding: 10px 20px;
   margin: 0;
-  background-color: aquamarine;
-  transition: background-color 0.2s ease-in-out;
+  text-decoration: none;
 }
 
-.navbar-main li:hover {
-  background-color: #d93b65;
+.navbar-main li a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.navbar-main li a:hover {
+  color: #d93b65;
   justify-content: space-around;
   align-items: center;
-  text-decoration: none;
+  font-size: 20px;
 }
 
 .categorias {
@@ -30,12 +34,20 @@
   justify-content: space-around;
   align-items: center;
 }
-.logo {
+.navbar-main .logo-logo .logo {
   object-fit: cover;
-  width: 80px;
+  width: auto;
   height: 80px;
   margin-right: 10px;
+  border-radius: 50%;
+  transition: all 0.4s;
+  cursor: pointer;
 }
+
+.navbar-main .logo-logo .logo:hover {
+  transform: scale(1.2);
+}
+
 /*Estilo para pantalla pequeña*/
 
 @media screen and (max-width: 768px) {
