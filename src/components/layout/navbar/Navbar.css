@@ -60,9 +60,8 @@
   .navbar-main li {
     padding: 5px 10px;
 
-    background-color: aquamarine;
     transition: background-color 0.2s ease-in-out;
-    font-size: 10px;
+    font-size: 8px;
   }
   .navbar-main {
     display: flex;

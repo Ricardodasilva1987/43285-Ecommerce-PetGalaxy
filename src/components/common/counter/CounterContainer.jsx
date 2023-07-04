@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import Counter from "./Counter";
 
-const CounterContainer = () => {
-  const [contador, setContador] = useState(0); //hook
+const CounterContainer = ({ stock, onAdd }) => {
+  const [contador, setContador] = useState(1); //hook
   const sumar = () => {
-    setContador(contador + 1);
+    contador < stock ? setContador(contador + 1) : alert("Cantidad Maxima");
   };
 
   const restar = () => {
-    setContador(contador - 1);
+    contador > 1 && setContador(contador - 1); //forma de if con el dobleanperson
   };
   return (
     <div>

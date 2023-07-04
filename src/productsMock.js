@@ -71,4 +71,14 @@ export let products = [
     description: "Puzzle felino para entrentener a tu gatito",
     img: "https://res.cloudinary.com/drids8rm1/image/upload/v1687451849/175398815-origpic-cd81d7_uuj2yz.jpg",
   },
+  {
+    id: 9,
+    tittle: "ACANA FREE-RUN POULTRY DOG ",
+    price: 18490,
+    stock: 26,
+    description:
+      "Pollo de corral pavo y huevos del nido son entregados frescos de las granjas locales en proporciones de presa entera. ",
+    category: "alimento",
+    img: "https://res.cloudinary.com/drids8rm1/image/upload/v1688407124/free-run-poultry_bmkbxw.jpg",
+  },
 ];
